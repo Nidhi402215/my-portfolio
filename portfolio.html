@@ -24,6 +24,18 @@
   <section id="about">
     <img src="images/Nidhi.jpg" alt="Profile Photo">
     <br>
+    const text = "Hi, I'm Nidhi — Web Developer and a Python Programmer 💻";
+let index = 0;
+function typeEffect() {
+  if (index < text.length) {
+    document.getElementById("type-text").textContent += text.charAt(index);
+    index++;
+    setTimeout(typeEffect, 80);
+  }
+}
+typeEffect();
+
+    <br>
     <h1 id="type-text"></h1>
     <br>
     <h2>👩‍💻 About Me</h2>
